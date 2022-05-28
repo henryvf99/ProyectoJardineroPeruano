@@ -10,11 +10,10 @@
   top: -100px;
 }
 
-
 .valoracion label {
   float: right;
   color: #c1b8b8;
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 .valoracion label:hover,
@@ -23,3 +22,27 @@
   color: #facc00;
 }
 
+form .form-group {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #000;
+}
+
+main {
+  background: #fff;
+}
+
+section {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+aside {
+  text-align: left;
+  background: #ffab00;
+  padding: 60px 0;
+}
