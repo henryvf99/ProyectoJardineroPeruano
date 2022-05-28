@@ -14,13 +14,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistroComponent } from './registro/registro.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ValoracionComponent } from './valoracion/valoracion.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistroComponent,
     FormularioComponent,
-    ValoracionComponent
+    ValoracionComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

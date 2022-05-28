@@ -11,3 +11,13 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+mat-toolbar{
+	background: #85C833;
+}
+
+footer{
+	padding: 20px;
+	background: #6DAB24;
+	color: #fff;
+}
