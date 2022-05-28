@@ -1,5 +1,6 @@
 form .form-group{
     margin-bottom: 10px;
+    color: #fff;
 }
 
 footer{
@@ -7,7 +8,13 @@ footer{
 }
 
 main{
-    background: #fff;
+    background: #000;
+}
+
+.contenedor-main .titulo{
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 section{

@@ -5,7 +5,22 @@ footer{
     text-decoration: none;
 }
 
+footer .centro{
+    color: #000;
+}
+
 footer .centro a{
-    color: #ffff;
+    color: #000;
+    text-decoration: none;
+}
+
+footer .izquierda{
+    color: #000;
+    text-align: center;
+}
+
+footer .izquierda a{
+    text-align: center;
+    color: #000;
     text-decoration: none;
 }
