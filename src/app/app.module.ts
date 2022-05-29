@@ -15,6 +15,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InicioComponent } from './inicio/inicio.component';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

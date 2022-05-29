@@ -1,5 +1,5 @@
 footer{
-	padding: 10px;
+	padding: 20px;
 	background: #6DAB24;
 	color: #fff;
     text-decoration: none;
@@ -10,16 +10,18 @@ footer .centro{
 }
 
 footer .centro a{
+    padding: 2px;
     color: #000;
     text-decoration: none;
 }
 
-footer .izquierda{
+footer .derecha{
     color: #000;
     text-align: center;
 }
 
-footer .izquierda a{
+footer .derecha a{
+    padding: 2px;
     text-align: center;
     color: #000;
     text-decoration: none;

@@ -8,11 +8,12 @@ footer{
 }
 
 main{
+    margin: 30px;
     background: #000;
 }
 
 .contenedor-main .titulo{
-    margin-top: 20px;
+    margin-top: 10px;
     color: #fff;
     text-align: center;
 }
@@ -27,5 +28,5 @@ section{
 aside {
     text-align: left;
     background: #FFAB00;
-    padding: 60px 0;
+    padding: 20px 0;
 }

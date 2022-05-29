@@ -10,11 +10,14 @@
   top: -100px;
 }
 
-
 .valoracion label {
   float: right;
-  color: #c1b8b8;
-  font-size: 30px; 
+  color: #403232;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .valoracion label:hover,
@@ -23,3 +26,32 @@
   color: #facc00;
 }
 
+
+
+
+
+/*FONDO Y TEXT*/
+form .form-group {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #000;
+}
+
+main {
+  background: #fff;
+}
+
+section {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+aside {
+  text-align: left;
+  background: #ffab00;
+  padding: 60px 0;
+}
