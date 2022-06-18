@@ -16,6 +16,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TipsComponent } from './tips/tips.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RegistroComponent,
     FormularioComponent,
     ValoracionComponent,
-    InicioComponent
+    InicioComponent,
+    TipsComponent
   ],
   imports: [
     BrowserModule,
