@@ -1,0 +1,13 @@
+<div style="padding: 13px;">
+
+    <mat-spinner *ngIf="formularios.length == 0"></mat-spinner>
+    <mat-card *ngFor="let formulario of formularios" style="margin-top: 13px;">
+    
+        <mat-card-header>
+            <mat-card-title>nombre {{formulario.nombre}}</mat-card-title>
+            <mat-card-subtitle>apellido {{formulario.apellido}}</mat-card-subtitle>
+        </mat-card-header>
+
+    </mat-card>
+
+</div>

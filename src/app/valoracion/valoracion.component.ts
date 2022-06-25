@@ -17,7 +17,7 @@ export class ValoracionComponent implements OnInit {
   }
 
   public ListarValoracion(){
-    this.apiService.ListarValoracion().subscribe((data: any) => {
+    this.apiService.listarValoraciones().subscribe((data: any) => {
         this.valoracion=data;
         console.log(data);
     });

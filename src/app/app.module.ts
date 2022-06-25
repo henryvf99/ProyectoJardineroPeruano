@@ -17,6 +17,8 @@ import { ValoracionComponent } from './valoracion/valoracion.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TipsComponent } from './tips/tips.component';
+import { ValoracionListComponent } from './admin/valoracion-list/valoracion-list.component';
+import { FormularioListComponent } from './admin/formulario-list/formulario-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TipsComponent } from './tips/tips.component';
     FormularioComponent,
     ValoracionComponent,
     InicioComponent,
-    TipsComponent
+    TipsComponent,
+    ValoracionListComponent,
+    FormularioListComponent
   ],
   imports: [
     BrowserModule,
