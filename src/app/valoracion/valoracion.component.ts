@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import { Usuario } from '../entities/usuario';
 
 @Component({
   selector: 'app-valoracion',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValoracionComponent implements OnInit {
 
-  constructor() { }
+  public valoracion: Array<Usuario> = [];
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.ListarValoracion();
+  }
+
+  public ListarValoracion(){
+    this.apiService.ListarValoracion().subscribe((data: any) => {
+        this.valoracion=data;
+        console.log(data);
+    });
+    
   }
 
 }
