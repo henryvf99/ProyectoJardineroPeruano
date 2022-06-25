@@ -10,6 +10,9 @@ import { TipsComponent } from './tips/tips.component';
 
 const routes: Routes = [
   {
+    path: '', redirectTo: 'inicio', pathMatch: 'full'
+  },
+  {
     path: 'valoraciones',
     component: ValoracionListComponent
   },

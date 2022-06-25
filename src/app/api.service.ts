@@ -14,4 +14,9 @@ export class ApiService {
   listarValoraciones(){
     return this.httpClient.get(`${this.API_URL}/valoracion`);
   }
+
+  listarFormularios(){
+    return this.httpClient.get(`${this.API_URL}/formularios`);
+  }
+
 }
