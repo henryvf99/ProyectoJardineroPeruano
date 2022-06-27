@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
+import { MatTableDataSource } from '@angular/material/table';
 import {Formulario} from '../../entities/formulario';
 
 @Component({
