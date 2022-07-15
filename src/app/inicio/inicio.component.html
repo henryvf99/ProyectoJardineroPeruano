@@ -27,3 +27,21 @@
           con señalización a lo largo del camino, o ingresa por el Puente Viaducto de Salaverry.
         </h3>
   </div>
+
+  <div class="container align-items-center" style="margin-top: 1rem">
+    <h1>COMENTARIOS</h1>
+    <div style="padding: 13px;">
+
+      <mat-spinner *ngIf="valoraciones.length == 0"></mat-spinner>
+      <mat-card class="card w-50" *ngFor="let valoracion of valoraciones" style="margin-top: 13px;">
+      
+          <mat-card-header >
+              <mat-card-title> {{valoracion.nombre}} {{valoracion.apellido}}</mat-card-title>
+              <mat-card-subtitle>valoracion: {{valoracion.valor}}</mat-card-subtitle>
+              <mat-card-subtitle> {{valoracion.comentario}}</mat-card-subtitle>
+          </mat-card-header>
+ 
+      </mat-card>
+    </div>
+
+</div>

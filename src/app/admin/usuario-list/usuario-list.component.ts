@@ -18,7 +18,7 @@ export class UsuarioListComponent implements OnInit {
   }
 
   public listarUsuarios(){
-    this.apiService.listarValoraciones().subscribe((data: any) => {
+    this.apiService.listarUsuarios().subscribe((data: any) => {
       this.usuarios=data;
       console.log(data);
     });

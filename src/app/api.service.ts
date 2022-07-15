@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
+import {environment} from 'src/environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import {HttpClient} from '@angular/common/http'
 
 export class ApiService {
 
-  API_URL = 'http://localhost:9000';
+  private API_URL:string = environment.API_URL;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -17,6 +18,10 @@ export class ApiService {
 
   listarFormularios(){
     return this.httpClient.get(`${this.API_URL}/formularios`);
+  }
+
+  listarUsuarios(){
+    return this.httpClient.get(`${this.API_URL}/usuarios`);
   }
 
 }

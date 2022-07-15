@@ -1,24 +1,41 @@
 <div style="padding: 13px;">
 
   <mat-spinner *ngIf="formularios.length == 0"></mat-spinner>
-  <mat-card *ngFor="let formulario of formularios" style="margin-top: 13px;">
-  
-      <mat-card-header>
-        <mat-card-subtitle>id: {{formulario.id}}</mat-card-subtitle>
-          <mat-card-subtitle>nombre: {{formulario.nombre}}</mat-card-subtitle>
-          <mat-card-subtitle>apellidos: {{formulario.apellido}}</mat-card-subtitle>
-          <mat-card-subtitle>telefono: {{formulario.telefono}}</mat-card-subtitle>
-          <mat-card-subtitle>departamento: {{formulario.departamento}}</mat-card-subtitle>
-          <mat-card-subtitle>ciudad: {{formulario.ciudad}}</mat-card-subtitle>
-          <mat-card-subtitle>distrito: {{formulario.distrito}}</mat-card-subtitle>
-          <mat-card-subtitle>direccion: {{formulario.direccion}}</mat-card-subtitle>
-          <mat-card-subtitle>referencia: {{formulario.referencia}}</mat-card-subtitle>
-          <mat-card-subtitle>tipomadera: {{formulario.tipomadera}}</mat-card-subtitle>
-          <mat-card-subtitle>cantidad: {{formulario.cantidad}}</mat-card-subtitle>
-          <mat-card-subtitle>descripcion: {{formulario.descripcion}}</mat-card-subtitle>
-          <mat-card-subtitle>estado: {{formulario.estado}}</mat-card-subtitle>
-      </mat-card-header>
-
-  </mat-card>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>  
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Departamento</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Distrito</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Referencia</th>
+        <th scope="col">Tipo madera</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Descrpcion</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let formulario of formularios">
+        <td>{{formulario.id}}</td>
+        <td>{{formulario.nombre}}</td>
+        <td>{{formulario.apellido}}</td>
+        <td>{{formulario.telefono}}</td>
+        <td>{{formulario.departamento}}</td>
+        <td>{{formulario.ciudad}}</td>
+        <td>{{formulario.distrito}}</td>
+        <td>{{formulario.direccion}}</td>
+        <td>{{formulario.referencia}}</td>
+        <td>{{formulario.tipomadera}}</td>
+        <td>{{formulario.cantidad}}</td>
+        <td>{{formulario.descripcion}}</td>
+        <td>{{formulario.estado}}</td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

@@ -1,54 +1,60 @@
-<mat-toolbar id="nav-menu">
-  &nbsp;<mat-icon aria-hidden="false" aria-label="Example home icon" style="color:#3f51b5;">home</mat-icon>
-  &nbsp;<span>jardinero Peruano</span>
-  
-    <span class="spacer"></span>
-  
-    <button mat-button routerLink="/inicio" class="ms-2" >Inicio</button>
-    <button mat-button routerLink="/tips" class="ms-2" >Tips</button>
-    <button mat-button routerLink="/registro" class="ms-2" >Registro</button>
-    <button mat-button routerLink="/valoracion" class="ms-2" >Valoracion</button>
-    <button mat-button routerLink="/formulario" class="ms-2" >Formulario</button>
-  </mat-toolbar>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9EDD88;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JardineroPeruano</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/tips">Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/formulario">Donar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/valoracion">Valoración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/registro">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <router-outlet></router-outlet>
 
-<footer class="row">
-  
-  <div class="izquierda col-md-4">
-    <img src="https://scontent.ftru2-2.fna.fbcdn.net/v/t1.6435-9/169654766_947153352491521_4420752942454004515_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFhX8mQQ6O4JZp_1zjDS7TeRJLuUhG7SBZEku5SEbtIFi9zYkCzVeJIj6Jw3WJCUioabHgQte_sfA8ZvAWX43ZI&_nc_ohc=EelJiMceOKoAX8LfSHe&_nc_ht=scontent.ftru2-2.fna&oh=00_AT_plU_NBVWAt0Iy7YRFhI0c8moFTGN3vt5Qf82m2g4z4A&oe=62B7C600" width="100" class="img-fluid">
-  </div>
-
-  <div class="centro col-md-4">
-    <p style = "font-size: 28px;">Empresa</p>
-
-    <div class="row">
-    <a style = "font-size: 20px;" href="#"><span class="otherPage">Quiénes somos</span></a>
-    </div>
-
-    <div class="row">
-      <a style = "font-size: 20px;" href="#"><span class="otherPage">Políticas</span></a>
-    </div>
-
-    <div style = "font-size: 20px;" class="row">
-      <a href="#"><span class="otherPage">Calificanos</span></a>
-    </div>
-
-  </div>
-
-  <div class="derecha col-md-4">
-    <p style = "font-size: 28px;">Redes sociales</p>
-    <div class="row">
-      <a href="#"><span class="otherPage">Quiénes somos</span></a>
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="https://scontent.ftru2-2.fna.fbcdn.net/v/t1.6435-9/169654766_947153352491521_4420752942454004515_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFhX8mQQ6O4JZp_1zjDS7TeRJLuUhG7SBZEku5SEbtIFi9zYkCzVeJIj6Jw3WJCUioabHgQte_sfA8ZvAWX43ZI&_nc_ohc=zz9pnspvzeQAX_aWrTB&_nc_ht=scontent.ftru2-2.fna&oh=00_AT90R9Hvx_dLGJrw_cMUPFiC87Z3Psk8RAqI2MkbEu9opw&oe=62F70E00" alt="Logo de JardineroPeruano">
+              </a>
+          </figure>
       </div>
-  
-      <div class="row">
-        <a style = "font-size: 20px;" href="#"><span class="otherPage">jardineroperuano@gmail.com</span></a>
+      <div class="box">
+          <h2>EMPRESA</h2>
+          <p>Quiénes somos</p>
+          <p>Políticas</p>
+          <p>Calificanos</p>
       </div>
-  
-      <div class="row">
-        <a style = "font-size: 20px;" href="#"><span class="otherPage">Calificanos</span></a>
+      <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+          </div>
+          <p>jardineroperuano@gmail.com</p>
+          <p>923026676</p>
       </div>
   </div>
-
+  <div class="grupo-2">
+      <small>&copy; 2022 <b>JardineroPeruano</b> - Todos los Derechos Reservados.</small>
+  </div>
 </footer>

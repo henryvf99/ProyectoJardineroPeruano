@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FormularioComponent} from './formulario/formulario.component';
 import {ValoracionListComponent} from './admin/valoracion-list/valoracion-list.component';
+import {UsuarioListComponent} from './admin/usuario-list/usuario-list.component';
 import {ValoracionComponent} from './valoracion/valoracion.component';
 import {FormularioListComponent} from './admin/formulario-list/formulario-list.component';
 import {RegistroComponent} from './registro/registro.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'formularios',
     component: FormularioListComponent
+  },
+  {
+    path: 'usuarios',
+    component: UsuarioListComponent
   },
   {
     path: 'inicio',

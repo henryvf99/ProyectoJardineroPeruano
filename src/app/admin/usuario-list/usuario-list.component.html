@@ -1,18 +1,27 @@
 <div style="padding: 13px;">
 
     <mat-spinner *ngIf="usuarios.length == 0"></mat-spinner>
-    <mat-card *ngFor="let usuario of usuarios" style="margin-top: 13px;">
-    
-        <mat-card-header>
-            <mat-card-subtitle>id: {{usuario.id}}</mat-card-subtitle>
-            <mat-card-subtitle>nombre: {{usuario.nombre}}</mat-card-subtitle>
-            <mat-card-subtitle>apellido: {{usuario.apellido}}</mat-card-subtitle>
-            <mat-card-subtitle>telefono: {{usuario.celular}}</mat-card-subtitle>
-            <mat-card-subtitle>DNI: {{usuario.dni}}</mat-card-subtitle>
-            <mat-card-subtitle>correo: {{usuario.correo}}</mat-card-subtitle>
-            <mat-card-subtitle>contraseña: {{usuario.contrasena}}</mat-card-subtitle>
-        </mat-card-header>
-
-    </mat-card>
-
-</div>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>  
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">DNI</th>
+          <th scope="col">correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{usuario.id}}</td>
+          <td>{{usuario.nombre}}</td>
+          <td>{{usuario.apellido}}</td>
+          <td>{{usuario.celular}}</td>
+          <td>{{usuario.dni}}</td>
+          <td>{{usuario.correo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>

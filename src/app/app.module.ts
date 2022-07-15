@@ -7,6 +7,9 @@ import {MatIconModule} from '@angular/material/icon'
 import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'
+import {MatSelectModule} from '@angular/material/select';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TipsComponent } from './tips/tips.component';
 import { ValoracionListComponent } from './admin/valoracion-list/valoracion-list.component';
 import { FormularioListComponent } from './admin/formulario-list/formulario-list.component';
+import { UsuarioListComponent } from './admin/usuario-list/usuario-list.component';
 
 @NgModule({
   declarations: [
@@ -29,19 +33,38 @@ import { FormularioListComponent } from './admin/formulario-list/formulario-list
     InicioComponent,
     TipsComponent,
     ValoracionListComponent,
-    FormularioListComponent
+    FormularioListComponent,
+    UsuarioListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatTableModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+  ],
+  exports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    NgbModule,
+    ReactiveFormsModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

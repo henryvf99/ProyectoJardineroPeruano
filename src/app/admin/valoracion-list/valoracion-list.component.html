@@ -1,19 +1,27 @@
 <div style="padding: 13px;">
 
     <mat-spinner *ngIf="valoraciones.length == 0"></mat-spinner>
-    <mat-card *ngFor="let valoracion of valoraciones" style="margin-top: 13px;">
-    
-        <mat-card-header>
-            <mat-card-title>nombre {{valoracion.nombre}}</mat-card-title>
-            <mat-card-subtitle>apellido {{valoracion.apellido}}</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-card-content>
-            <p>
-                {{valoracion.comentario}}
-            </p>
-        </mat-card-content>
-
-    </mat-card>
-
-</div>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>  
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Email</th>
+          <th scope="col">Comentario</th>
+          <th scope="col">valoración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let valoracion of valoraciones">
+          <td>{{valoracion.id}}</td>
+          <td>{{valoracion.nombre}}</td>
+          <td>{{valoracion.apellido}}</td>
+          <td>{{valoracion.email}}</td>
+          <td>{{valoracion.comentario}}</td>
+          <td>{{valoracion.valor}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>

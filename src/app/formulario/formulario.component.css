@@ -19,13 +19,13 @@ main{
 }
 
 section{
-    padding-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: #000;
 }
 
 aside {
+    margin-top: 20px;
     text-align: left;
     background: #FFAB00;
     padding: 20px 0;
