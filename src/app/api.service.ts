@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http'
 import {environment} from 'src/environments/environment'
 import { Formulario } from './entities/formulario';
 import { Observable } from 'rxjs';
+import { Valoracion } from './entities/valoracion';
 
 @Injectable({
   providedIn: 'root'
@@ -33,6 +34,14 @@ export class ApiService {
 
   eliminarFormulario(id: number){
     return this.httpClient.delete(`${this.API_URL}/formulario/${id}`)
+  }
+
+  agregarValoracion(valoracion:Valoracion): Observable<any>{
+    return this.httpClient.post(`${this.API_URL}/valoracion`,valoracion);
+  }
+
+  eliminarValoracion(id: number){
+    return this.httpClient.delete(`${this.API_URL}/valoracion/${id}`)
   }
 
 }

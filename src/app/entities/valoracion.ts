@@ -1,4 +1,4 @@
-export interface Valoracion{
+export class Valoracion{
     id: number;
     nombre: string;
     apellido: string;

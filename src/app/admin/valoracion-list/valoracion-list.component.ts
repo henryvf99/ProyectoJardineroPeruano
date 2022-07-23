@@ -22,4 +22,12 @@ export class ValoracionListComponent implements OnInit {
       console.log(data);
     });
   }
+
+public eliminarValoracion(id: number){
+  this.apiService.eliminarValoracion(id)
+      .subscribe(() => {
+        this.listarValoracion()
+      });
+}
+
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 import { Usuario } from '../entities/usuario';
+import { Valoracion } from '../entities/valoracion';
 
 @Component({
   selector: 'app-valoracion',
@@ -10,7 +12,10 @@ import { Usuario } from '../entities/usuario';
 export class ValoracionComponent implements OnInit {
 
   public valoracion: Array<Usuario> = [];
-  constructor(private apiService: ApiService) { }
+  datos: Valoracion = new Valoracion;
+
+  constructor(private apiService: ApiService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.ListarValoracion();
@@ -21,7 +26,14 @@ export class ValoracionComponent implements OnInit {
         this.valoracion=data;
         console.log(data);
     });
-    
+  }
+
+  public addValoracion(){
+    this.apiService.agregarValoracion(this.datos)
+        .subscribe(data => {
+          console.log(data);
+          this.router.navigate(['/inicio']);
+        }, error => console.log(error));
   }
 
 }

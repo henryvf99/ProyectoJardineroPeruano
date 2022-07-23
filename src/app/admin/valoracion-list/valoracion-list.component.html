@@ -43,7 +43,7 @@
           <td>{{valoracion.comentario}}</td>
           <td>{{valoracion.valor}}</td>
           <td align="center">
-            <button onClick="window.location.reload();"  type="button" class="btn btn-danger">eliminar</button>
+            <button onClick="window.location.reload();" (click)="eliminarValoracion(valoracion.id)" type="button" class="btn btn-danger">eliminar</button>
           </td>
         </tr>
       </tbody>
