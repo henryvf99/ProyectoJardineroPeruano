@@ -8,6 +8,7 @@ import {FormularioListComponent} from './admin/formulario-list/formulario-list.c
 import {RegistroComponent} from './registro/registro.component';
 import {InicioComponent} from './inicio/inicio.component';
 import { TipsComponent } from './tips/tips.component';
+import { MenuAdmComponent } from './admin/menu-adm/menu-adm.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
   {
     path: 'tips',
     component: TipsComponent
+  },
+  {
+    path: 'admin',
+    component: MenuAdmComponent
   }
 ];
 

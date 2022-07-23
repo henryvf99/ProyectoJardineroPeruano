@@ -23,6 +23,7 @@ import { TipsComponent } from './tips/tips.component';
 import { ValoracionListComponent } from './admin/valoracion-list/valoracion-list.component';
 import { FormularioListComponent } from './admin/formulario-list/formulario-list.component';
 import { UsuarioListComponent } from './admin/usuario-list/usuario-list.component';
+import { MenuAdmComponent } from './admin/menu-adm/menu-adm.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UsuarioListComponent } from './admin/usuario-list/usuario-list.componen
     TipsComponent,
     ValoracionListComponent,
     FormularioListComponent,
-    UsuarioListComponent
+    UsuarioListComponent,
+    MenuAdmComponent
   ],
   imports: [
     BrowserModule,
