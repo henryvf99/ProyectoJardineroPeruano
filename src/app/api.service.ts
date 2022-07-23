@@ -4,6 +4,7 @@ import {environment} from 'src/environments/environment'
 import { Formulario } from './entities/formulario';
 import { Observable } from 'rxjs';
 import { Valoracion } from './entities/valoracion';
+import { Usuario } from './entities/usuario';
 
 @Injectable({
   providedIn: 'root'
@@ -42,6 +43,14 @@ export class ApiService {
 
   eliminarValoracion(id: number){
     return this.httpClient.delete(`${this.API_URL}/valoracion/${id}`)
+  }
+
+  agregarUsuario(usuario:Usuario): Observable<any>{
+    return this.httpClient.post(`${this.API_URL}/usuario`,usuario);
+  }
+
+  eliminarUsuario(id: number){
+    return this.httpClient.delete(`${this.API_URL}/usuario/${id}`)
   }
 
 }

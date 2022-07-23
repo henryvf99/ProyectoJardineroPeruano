@@ -43,7 +43,7 @@
           <td>{{usuario.dni}}</td>
           <td>{{usuario.correo}}</td>
           <td align="center">
-            <button onClick="window.location.reload();" type="button" class="btn btn-danger">eliminar</button>
+            <button onClick="window.location.reload();" (click)="eliminarUsuario(usuario.id)" type="button" class="btn btn-danger">eliminar</button>
           </td>
         </tr>
       </tbody>

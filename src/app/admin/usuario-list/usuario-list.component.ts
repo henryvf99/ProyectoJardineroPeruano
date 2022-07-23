@@ -24,4 +24,11 @@ export class UsuarioListComponent implements OnInit {
     });
   }
 
+  public eliminarUsuario(id: number){
+    this.apiService.eliminarUsuario(id)
+        .subscribe(() => {
+          this.listarUsuarios()
+        });
+  }
+
 }
