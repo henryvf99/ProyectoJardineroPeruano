@@ -10,6 +10,7 @@
           <th scope="col">Email</th>
           <th scope="col">Comentario</th>
           <th scope="col">valoración</th>
+          <th style="text-align:center;" scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,9 @@
           <td>{{valoracion.email}}</td>
           <td>{{valoracion.comentario}}</td>
           <td>{{valoracion.valor}}</td>
+          <td align="center">
+            <button onClick="window.location.reload();"  type="button" class="btn btn-danger">eliminar</button>
+          </td>
         </tr>
       </tbody>
     </table>

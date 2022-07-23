@@ -10,7 +10,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -50,6 +50,7 @@ import { UsuarioListComponent } from './admin/usuario-list/usuario-list.componen
     NgbModule,
     ReactiveFormsModule,
     MatSelectModule,
+    FormsModule,
   ],
   exports: [
     BrowserModule,

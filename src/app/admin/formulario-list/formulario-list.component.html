@@ -17,6 +17,7 @@
         <th scope="col">Cantidad</th>
         <th scope="col">Descrpcion</th>
         <th scope="col">Estado</th>
+        <th style="text-align:center;" scope="col">Acciones</th>
       </tr>
     </thead>
     <tbody>
@@ -34,6 +35,9 @@
         <td>{{formulario.cantidad}}</td>
         <td>{{formulario.descripcion}}</td>
         <td>{{formulario.estado}}</td>
+        <td align="center">
+          <button onClick="window.location.reload();" (click)="eliminar(formulario.id)" type="button" class="btn btn-danger">eliminar</button>
+        </td>
       </tr>
     </tbody>
   </table>

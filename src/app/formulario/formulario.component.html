@@ -10,14 +10,35 @@
       </main>
       
       <aside class="col-md-5">
-         <form>   
+         <form (ngSubmit)="onSubmit()">
+                     
                   <div class="form-group row">
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre: </label>
+                    <label for="nombre" class="col-sm-2 col-form-label" >Nombre: </label>
                     <div class="col-sm-8">
-                     <input type="text" class="form-control" id="inputEmail3" value="">
+                     <input type="text" class="form-control" id="nombre" [(ngModel)] = "formulario.nombre" name="nombre">
+                    </div>
+                  </div>
+  
+                  <div class="form-group row">
+                    <div class="col-sm-1">
+                      <p></p> 
+                    </div>
+                    <label for="apellido" class="col-sm-2 col-form-label">Apellidos: </label>
+                    <div class="col-sm-8">
+                     <input type="text" class="form-control" id="apellido" [(ngModel)] = "formulario.apellido" name="apellido">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-1">
+                      <p></p> 
+                    </div>
+                    <label for="apellido" class="col-sm-2 col-form-label">DNI: </label>
+                    <div class="col-sm-8">
+                     <input type="text" class="form-control" id="dni" [(ngModel)] = "formulario.id" name="id">
                     </div>
                   </div>
   
@@ -25,9 +46,9 @@
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Apellidos: </label>
+                    <label for="relefono" class="col-sm-2 col-form-label">Telefono: </label>
                     <div class="col-sm-8">
-                     <input type="text" class="form-control" id="inputEmail3" value="">
+                     <input type="text" class="form-control" id="telefono" [(ngModel)] = "formulario.telefono" name="telefono">
                     </div>
                   </div>
   
@@ -35,9 +56,9 @@
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Telefono: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Departamento: </label>
                     <div class="col-sm-8">
-                     <input type="text" class="form-control" id="inputEmail3" value="">
+                     <input type="text" class="form-control" id="departamento" [(ngModel)] = "formulario.departamento" name="departamento">
                     </div>
                   </div>
   
@@ -45,69 +66,29 @@
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Departamento: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Ciudad: </label>
                     <div class="col-sm-8">
-                       <select class="form-select" aria-label="Default select example">
-                         <option selected>Seleccione</option>
-                         <option value="1">La Libertad</option>
-                       </select>
-                    </div> 
-                  </div>
-  
-                  <div class="form-group row">
-                    <div class="col-sm-1">
-                      <p></p>
+                     <input type="text" class="form-control" id="ciudad" [(ngModel)] = "formulario.ciudad" name="ciudad">
                     </div>
-                    <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Provincia: </label>
-                    <div class="col-sm-8">
-                       <select class="form-select" aria-label="Default select example">
-                         <option selected>Seleccione</option>
-                         <option value="1">Ascope</option>
-                         <option value="2">Bolivar</option>
-                         <option value="3">Chepen</option>
-                         <option value="4">Gran Chimú</option>
-                         <option value="5">Julcán</option>
-                         <option value="6">Otuzco</option>
-                         <option value="7">Pacasmayo</option>
-                         <option value="8">Pataz</option>
-                         <option value="9">Sánchez Carrión</option>
-                         <option value="10">Santiago de Cguco</option>
-                         <option value="11">Trujillo</option>
-                         <option value="12">Virú</option>
-                       </select>
-                    </div> 
-                   </div>
+                  </div>
   
                    <div class="form-group row">
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Distrito: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Distrito: </label>
                     <div class="col-sm-8">
-                       <select class="form-select" aria-label="Default select example">
-                         <option selected>Seleccione</option>
-                         <option value="1">El Porvenir</option>
-                         <option value="2">Florencia de Mora</option>
-                         <option value="3">Huanchaco</option>
-                         <option value="4">La Esperanza</option>
-                         <option value="5">Laredo</option>
-                         <option value="6">Moche</option>
-                         <option value="7">Poroto</option>
-                         <option value="8">Salaverry</option>
-                         <option value="9">Simbal</option>
-                         <option value="10">Trujillo</option>
-                         <option value="11">Victor Larco Herrera</option>
-                       </select>
-                    </div> 
-                   </div>
+                     <input type="text" class="form-control" id="distrito" [(ngModel)] = "formulario.distrito" name="distrito">
+                    </div>
+                  </div>
   
                    <div class="form-group row">
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Dirección: </label>
+                    <label for="direccion" class="col-sm-2 col-form-label">Dirección: </label>
                     <div class="col-sm-8">
-                     <input type="text" class="form-control" id="inputEmail3" value="">
+                     <input type="text" class="form-control" id="direccion" [(ngModel)] = "formulario.direccion" name="direccion">
                     </div>
                   </div>
   
@@ -115,9 +96,9 @@
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Referencia: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Referencia: </label>
                     <div class="col-sm-8">
-                     <input type="text" class="form-control" id="inputEmail3" value="">
+                     <input type="text" class="form-control" id = "referencia" [(ngModel)] = "formulario.referencia" name="referencia">
                     </div>
                   </div>
   
@@ -125,35 +106,31 @@
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Tipo de madera: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Tipo madera: </label>
                     <div class="col-sm-8">
-                       <select class="form-select" aria-label="Default select example">
-                         <option selected>Seleccione</option>
-                         <option value="1">Caoba</option>
-                         <option value="2">Cedro</option>
-                         <option value="3">Eucalipto</option>
-                         <option value="4">Pino</option>
-                         <option value="5">Roble</option>
-                         <option value="6">Sphingo</option>
-                         <option value="7">Tornillo</option>
-                       </select>
-                    </div> 
-                   </div>
+                     <input type="text" class="form-control" id="tipomadera" [(ngModel)] = "formulario.tipomadera" name="tipomadera">
+                    </div>
+                  </div>
   
-                   <div class="form-group row">
+                  <div class="form-group row">
                     <div class="col-sm-1">
                       <p></p>
                     </div>
-                    <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Cantidad: </label>
+                    <label for="referencia" class="col-sm-2 col-form-label">Cantidad: </label>
                     <div class="col-sm-8">
-                       <select class="form-select" aria-label="Default select example">
-                         <option selected>Seleccione</option>
-                         <option value="1">Harto</option>
-                         <option value="2">Regular</option>
-                         <option value="3">Poco</option>
-                       </select>
-                    </div> 
-                   </div>
+                     <input type="text" class="form-control" id="cantidad" [(ngModel)] = "formulario.cantidad" name="cantidad">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-1">
+                      <p></p>
+                    </div>
+                    <label for="referencia" class="col-sm-2 col-form-label">Estado: </label>
+                    <div class="col-sm-8">
+                     <input type="text" class="form-control" id="estado" [(ngModel)] = "formulario.estado" name="estado">
+                    </div>
+                  </div>
   
                    <div class="form-group row">
                       <div class="col-sm-1">
@@ -161,20 +138,20 @@
                       </div>
   
                       <div class="col-sm-10">
-                        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="descripcion" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcion" rows="3" [(ngModel)] = "formulario.descripcion" name="descripcion"></textarea>
                        </div>
   
-                  </div>
+                    </div>
   
-                  <div class="form-group row">
-                    <div class="col-sm-9">
-                      <p></p>
+                    <div class="form-group row">
+                      <div class="col-sm-9">
+                        <p></p>
+                      </div>
+                      <div class="col-sm-3">
+                        <button (click)="onSubmit()" type="button" class="btn btn-dark" >Enviar</button>
+                      </div>
                     </div>
-                    <div class="col-sm-3">
-                      <button type="button" class="btn btn-dark">Enviar</button>
-                    </div>
-                  </div>
                   
          </form>
       </aside>

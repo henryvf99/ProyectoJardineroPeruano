@@ -1,4 +1,4 @@
-export interface Formulario{
+export class Formulario{
     id: number;
     nombre: string;
     apellido: string;

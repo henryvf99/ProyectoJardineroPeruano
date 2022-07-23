@@ -10,6 +10,7 @@
           <th scope="col">Telefono</th>
           <th scope="col">DNI</th>
           <th scope="col">correo</th>
+          <th style="text-align:center;" scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,9 @@
           <td>{{usuario.celular}}</td>
           <td>{{usuario.dni}}</td>
           <td>{{usuario.correo}}</td>
+          <td align="center">
+            <button onClick="window.location.reload();" type="button" class="btn btn-danger">eliminar</button>
+          </td>
         </tr>
       </tbody>
     </table>

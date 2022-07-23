@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 import {Formulario} from '../../entities/formulario';
 
@@ -10,7 +11,8 @@ import {Formulario} from '../../entities/formulario';
 export class FormularioListComponent implements OnInit {
 
   public formularios: Array<Formulario> = [];
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.listarFormulario();
@@ -21,6 +23,13 @@ export class FormularioListComponent implements OnInit {
       this.formularios=data;
       console.log(data);
     });
+  }   
+
+  public eliminar(id: number):void{
+    this.apiService.eliminarFormulario(id).subscribe(() => {
+      this.listarFormulario()
+    });
+    //this.router.navigate(['/formulario']);
   }
 
 }
